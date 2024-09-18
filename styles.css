@@ -1,186 +1,37 @@
-/* General Styles */
-body {
-    font-family: 'Merriweather', serif;
-    background-color: #191970; /* Midnight Blue */
-    color: #F5F5F5; /* Moonlight White */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Cauldron</title>
 
-/* Hero Section */
-.hero-section {
-    background-color: #2F4F4F; /* Dark Grey */
-    text-align: center;
-    padding: 100px 20px;
-}
+    <!-- Add IM Fell English SC Font -->
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 
-.hero-title {
-    font-family: 'UnifrakturMaguntia', cursive;
-    color: #FFD700; /* Gold */
-    font-size: 4rem;
-}
+    <style>
+        body {
+            font-family: 'IM Fell English SC', serif;
+        }
 
-.hero-tagline {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+        h1, h2 {
+            font-family: 'IM Fell English SC', serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tasty Cauldron</h1>
+    </header>
+    
+    <section id="tea-menu">
+        <h2>Our Magical Teas</h2>
+        <!-- Your tea menu content goes here -->
+    </section>
 
-.cta-button {
-    background-color: #228B22; /* Forest Green */
-    color: #F5F5F5;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.cta-button:hover {
-    background-color: #FFD700; /* Gold */
-    color: #191970; /* Midnight Blue */
-}
-
-/* About Section */
-.about-section {
-    text-align: center;
-    padding: 50px 20px;
-    border-top: 2px solid #B0C4DE; /* Ash */
-    border-bottom: 2px solid #B0C4DE;
-}
-
-.about-section h2 {
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-/* Menu Section */
-.menu-section {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.menu-section h2 {
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.menu-section p {
-    font-size: 1.2rem;
-}
-
-.cta-button {
-    background-color: #228B22;
-    color: #F5F5F5;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-/* Footer Section */
-.footer-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #2F4F4F;
-}
-
-.footer-section p {
-    font-size: 1rem;
-}
-
-/* Stars & Crescent Moons Borders */
-.hero-section::before,
-.about-section::before,
-.menu-section::before {
-    content: "★ ★ ★ ★ ★";
-    display: block;
-    font-size: 1.5rem;
-    color: #FFD700; /* Gold */
-    margin-bottom: 20px;
-}
-
-.hero-section::after,
-.about-section::after,
-.menu-section::after {
-    content: "☽ ☾ ☽ ☾ ☽";
-    display: block;
-    font-size: 1.5rem;
-    color: #FFD700;
-    margin-top: 20px;
-}/* Tea Menu Section */
-.tea-menu-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #2F4F4F; /* Dark Grey */
-    border-top: 2px solid #B0C4DE; /* Ash */
-    border-bottom: 2px solid #B0C4DE;
-}
-
-.tea-menu-section h2 {
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #FFD700; /* Gold */
-}
-
-.tea-category h3 {
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 2rem;
-    color: #228B22; /* Forest Green */
-    margin-bottom: 20px;
-}
-
-.tea-category ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.tea-category li {
-    background-color: #191970; /* Midnight Blue */
-    color: #F5F5F5; /* Moonlight White */
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.tea-category h4 {
-    font-family: 'UnifrakturMaguntia', cursive;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.tea-category p {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-.tea-category span {
-    font-size: 1.2rem;
-    color: #FFD700; /* Gold */
-}
-
-/* Stars & Crescent Moons Borders */
-.tea-menu-section::before {
-    content: "★ ★ ★ ★ ★";
-    display: block;
-    font-size: 1.5rem;
-    color: #FFD700; /* Gold */
-    margin-bottom: 20px;
-}
-
-.tea-menu-section::after {
-    content: "☽ ☾ ☽ ☾ ☽";
-    display: block;
-    font-size: 1.5rem;
-    color: #FFD700;
-    margin-top: 20px;
-}
+    <footer>
+        <p>Contact us at info@tastycauldron.com</p>
+    </footer>
+</body>
+</html>
