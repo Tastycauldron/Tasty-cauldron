@@ -11,23 +11,34 @@ body {
 /* Hero Section */
 .hero-section {
     background-color: #2F4F4F; /* Dark Grey */
-    background-image: url('THE ELIXIR.jpg'); /* Add a background image */
-    background-size: cover;
-    background-position: center;
     text-align: center;
     padding: 100px 20px;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
-    font-family: 'IM Fell English SC', serif;
+    font-family: 'UnifrakturMaguntia', cursive;
     color: #FFD700; /* Gold */
     font-size: 4rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .hero-tagline {
     font-size: 1.5rem;
     margin-top: 10px;
     margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .cta-button {
@@ -37,6 +48,7 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2rem;
+    margin-top: 20px;
 }
 
 .cta-button:hover {
@@ -52,9 +64,8 @@ body {
     border-bottom: 2px solid #B0C4DE;
 }
 
-/* Removed image background from the about section */
 .about-section h2 {
-    font-family: 'IM Fell English SC', serif;
+    font-family: 'UnifrakturMaguntia', cursive;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -64,38 +75,6 @@ body {
     line-height: 1.6;
 }
 
-/* Image Section */
-.image-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('BERRY ROSE.jpg'); /* New background image */
-    background-size: cover;
-    background-position: center;
-    border-top: 2px solid #B0C4DE; /* Add a border to separate the image */
-    color: #F5F5F5; /* Moonlight White */
-    position: relative;
-}
-
-.image-section h2 {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2.5rem;
-    color: #FFD700; /* Gold */
-}
-
-/* Add a border to the text in the image */
-.image-section h2, .image-section p {
-    background-color: rgba(0, 0, 0, 0.6); /* Black semi-transparent background */
-    padding: 10px;
-    border: 2px solid #FFD700; /* Gold border */
-    display: inline-block;
-    border-radius: 5px;
-}
-
-.image-section p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
 /* Menu Section */
 .menu-section {
     text-align: center;
@@ -103,66 +82,13 @@ body {
 }
 
 .menu-section h2 {
-    font-family: 'IM Fell English SC', serif;
+    font-family: 'UnifrakturMaguntia', cursive;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .menu-section p {
     font-size: 1.2rem;
-}
-
-/* Tea Menu Section */
-.tea-menu-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #2F4F4F; /* Dark Grey */
-    border-top: 2px solid #B0C4DE; /* Ash */
-    border-bottom: 2px solid #B0C4DE;
-}
-
-.tea-menu-section h2 {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #FFD700; /* Gold */
-}
-
-.tea-category h3 {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 2rem;
-    color: #228B22; /* Forest Green */
-    margin-bottom: 20px;
-}
-
-.tea-category ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.tea-category li {
-    background-color: #191970; /* Midnight Blue */
-    color: #F5F5F5; /* Moonlight White */
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-}
-
-.tea-category h4 {
-    font-family: 'IM Fell English SC', serif;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.tea-category p {
-    font-size: 1rem;
-    margin: 10px 0;
-}
-
-.tea-category span {
-    font-size: 1.2rem;
-    color: #FFD700; /* Gold */
 }
 
 /* Footer Section */
@@ -179,9 +105,7 @@ body {
 /* Stars & Crescent Moons Borders */
 .hero-section::before,
 .about-section::before,
-.menu-section::before,
-.tea-menu-section::before,
-.image-section::before {
+.menu-section::before {
     content: "★ ★ ★ ★ ★";
     display: block;
     font-size: 1.5rem;
@@ -191,12 +115,86 @@ body {
 
 .hero-section::after,
 .about-section::after,
-.menu-section::after,
-.tea-menu-section::after,
-.image-section::after {
+.menu-section::after {
     content: "☽ ☾ ☽ ☾ ☽";
     display: block;
     font-size: 1.5rem;
     color: #FFD700;
     margin-top: 20px;
+}
+
+/* Tea Menu Section */
+.tea-menu-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2F4F4F; /* Dark Grey */
+    border-top: 2px solid #B0C4DE; /* Ash */
+    border-bottom: 2px solid #B0C4DE;
+}
+
+.tea-category h3 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 2rem;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 20px;
+}
+
+/* Border or Background for Readability in Tea Menu */
+.tea-category h4 {
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 1.5rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.tea-category p {
+    font-size: 1rem;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.tea-category span {
+    font-size: 1.2rem;
+    color: #FFD700; /* Gold */
+}
+
+/* Stars & Crescent Moons Borders */
+.tea-menu-section::before {
+    content: "★ ★ ★ ★ ★";
+    display: block;
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold */
+    margin-bottom: 20px;
+}
+
+.tea-menu-section::after {
+    content: "☽ ☾ ☽ ☾ ☽";
+    display: block;
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-top: 20px;
+}
+
+/* Image Section with text borders */
+.image-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #F5F5F5;
+}
+
+.image-section h2,
+.image-section p {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for readability */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
