@@ -1,0 +1,91 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Cauldron</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Tasty Cauldron</h1>
+            <p class="hero-tagline">Brewed with Magic, Tasted with Wonder</p>
+            <a href="#menu" class="cta-button">Discover Our Teas</a>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Welcome to Tasty Cauldron, where every cup is brewed with enchantment. Our handcrafted teas are made with the finest natural ingredients and a pinch of magic.</p>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Teas</h2>
+        <p>Explore our mystical range of teas, from dark and brooding blends to light and floral brews.</p>
+        <a href="#tea-menu" class="cta-button">See the Full Menu</a>
+    </section>
+
+    <footer class="footer-section">
+        <p>© 2024 Tasty Cauldron | Made with Magic</p>
+    </footer>
+</body>
+</html>
+<section id="tea-menu" class="tea-menu-section">
+    <h2>Our Magical Teas</h2>
+
+    <div class="tea-category">
+        <h3>Floral</h3>
+        <ul>
+            <li>
+                <h4>Berry Rose</h4>
+                <p> Strawberry leaf, rose petals, raspberry leaf</p>
+                <span>$11.00</span>
+            </li>
+            <li>
+                <h4>Flower power </h4>
+                <p> Hibiscus, rose petals, lavender, nettle leaf</p>
+                <span>$11.00</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tea-category">
+        <h3>Calm</h3>
+        <ul>
+            <li>
+                <h4>Relax </h4>
+                <p>Lavendar flower, Ashwagandha root, Nettle leaf, Gotu kola</p>
+                <span>$11.00</span>
+            </li>
+            <li>
+                <h4>Meditation</h4>
+                <p> Passionflower, damiana leaf, lavender, raspberry leaf</p>
+                <span>$11.00</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tea-category">
+        <h3>Healing</h3>
+        <ul>
+            <li>
+                <h4>The elixir</h4>
+                <p> Burdock root, turmeric root, cornflowers, ginger root, raspberry leaf</p>
+                <span>$11.00</span>
+            </li>
+            <li>
+                <h4>The Ritual</h4>
+                <p>Mugwort, dandelion leaf, peppermint leaf, St. Johns wort</p>
+                <span>$11.00</span>
+            </li>
+        </li>
+        <li>
+            <h4>Serenity</h4>
+            <p> Ashwagandha root, St. Johns wort, Marshmallow leaf, passionflower</p>
+            <span>$11.00</span>
+        </li>
+        </ul>
+    </div>
+</section>
