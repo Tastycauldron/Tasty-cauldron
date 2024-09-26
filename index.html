@@ -6,6 +6,12 @@
     <title>Tasty Cauldron</title>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Smooth Scroll Behavior -->
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+    </style>
 </head>
 <body>
     <!-- Hero Section with Background Image and Readable Text -->
@@ -17,7 +23,8 @@
             <p class="hero-tagline" style="font-size: 1.5rem; margin-top: 10px; margin-bottom: 20px; border: 3px solid #FFD700; padding: 10px; display: inline-block; background-color: rgba(0, 0, 0, 0.5);">
                 Brewed with Magic, Tasted with Wonder
             </p>
-            <a href="#menu" class="cta-button">Discover Our Teas</a>
+            <!-- Add href attribute to link to #tea-menu -->
+            <a href="#tea-menu" class="cta-button">Discover Our Teas</a>
         </div>
     </header>
 
@@ -60,15 +67,16 @@
                     <p>Passionflower, damiana leaf, lavender, raspberry leaf.</p>
                     <span>$11.00</span>
                 </li>
-                <!-- Additional teas -->
                 <li>
+                    <!-- Placeholder for New Tea Item -->
                     <h4>Serenity</h4>
-                    <p>Ashwagandha root, St. Johns wort, Marshmallow leaf, passionflower.</p>
+                    <p>Chamomile, lemon balm, lavender, oat straw.</p>
                     <span>$11.00</span>
                 </li>
                 <li>
-                    <h4>Breathe</h4>
-                    <p>Dandelion leaf, burdock root, gotu kola, marshmallow.</p>
+                    <!-- Placeholder for New Tea Item -->
+                    <h4>Calm Storm</h4>
+                    <p>Valerian root, lemon balm, passionflower, hops.</p>
                     <span>$11.00</span>
                 </li>
             </ul>
@@ -117,21 +125,22 @@
             <option value="Flower Power">Flower Power</option>
             <option value="Relax">Relax</option>
             <option value="Meditation">Meditation</option>
+            <option value="Serenity">Serenity</option>
+            <option value="Calm Storm">Calm Storm</option>
             <option value="The Elixir">The Elixir</option>
             <option value="The Ritual">The Ritual</option>
-            <option value="Serenity">Serenity</option>
-            <option value="Breathe">Calm Storm</option>
         </select>
 
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" required>
 
-        <label for="notes">Additional Notes (Please leave full name, shipping info, contact telephone number. Email or text preference for shipping confirmation. After submission please use payment feature below):</label>
+        <label for="notes">Additional Notes:</label>
         <textarea id="notes" name="notes"></textarea>
 
         <button type="submit">Submit Order</button>
     </form>
 </section>
+
 
 <script src="https://www.paypal.com/sdk/js?client-id=BAAL6Pq_Lvfk7W5Aw3FXot_yPW3eSIIy4pejTBe20m_PS71RHre7i8Bdl8jO51Dr2paZk5s0GVgg8B4YZI&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 <div id="paypal-container-SHFPMLTAUNQ5U"></div>
@@ -140,6 +149,8 @@
     hostedButtonId: "SHFPMLTAUNQ5U",
   }).render("#paypal-container-SHFPMLTAUNQ5U")
 </script>
+
+
     
     <!-- Footer Section -->
     <footer class="footer-section">
