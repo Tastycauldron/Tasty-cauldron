@@ -6,7 +6,6 @@
     <title>Tasty Cauldron</title>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Add Smooth Scroll Behavior -->
     <style>
         html {
             scroll-behavior: smooth; /* Enables smooth scrolling */
@@ -23,7 +22,6 @@
             <p class="hero-tagline" style="font-size: 1.5rem; margin-top: 10px; margin-bottom: 20px; border: 3px solid #FFD700; padding: 10px; display: inline-block; background-color: rgba(0, 0, 0, 0.5);">
                 Brewed with Magic, Tasted with Wonder
             </p>
-            <!-- Add href attribute to link to #tea-menu -->
             <a href="#tea-menu" class="cta-button">Discover Our Teas</a>
         </div>
     </header>
@@ -128,48 +126,34 @@
         </div>
     </section>
 
+    <!-- About the Herbs Section -->
+    <section id="about-herbs" class="about-herbs-section" style="padding: 50px 20px; background-color: #2F4F4F; text-align: center; color: #F5F5F5;">
+        <h2 style="font-family: 'UnifrakturMaguntia', cursive; color: #FFD700; padding: 10px; display: inline-block; background-color: rgba(0, 0, 0, 0.5);">About the Herbs</h2>
+        <p>Learn more about the magical herbs used in our teas. Click below to view a PDF with detailed descriptions of each herb.</p>
+        <a href="Tasty description list (1)_240716_052826.pdf" target="_blank" style="font-size: 1.5rem; color: #FFD700; border: 3px solid #FFD700; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">View Herb Descriptions</a>
+    </section>
+
     <!-- Order Form Section -->
-   <section id="order-form" class="order-form-section">
-    <h2>Place Your Order</h2>
-    <form action="https://formspree.io/f/mdknrglq" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section id="order-form" class="order-form-section">
+        <h2>Place Your Order</h2>
+        <form action="https://formspree.io/f/mdknrglq" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="tea">Select Tea:</label>
-        <select id="tea" name="tea" required>
-            <option value="Berry Rose">Berry Rose</option>
-            <option value="Flower Power">Flower Power</option>
-            <option value="Relax">Relax</option>
-            <option value="Meditation">Meditation</option>
-            <option value="Serenity">Serenity</option>
-            <option value="Calm Storm">Calm Storm</option>
-            <option value="The Elixir">The Elixir</option>
-            <option value="The Ritual">The Ritual</option>
-        </select>
+            <label for="tea">Select Tea:</label>
+            <select id="tea" name="tea" required>
+                <option value="Berry Rose">Berry Rose</option>
+                <option value="Flower Power">Flower Power</option>
+                <option value="Relax">Relax</option>
+                <option value="Meditation">Meditation</option>
+                <option value="Serenity">Serenity</option>
+                <option value="Calm Storm">Calm Storm</option>
+                <option value="The Elixir">The Elixir</option>
+                <option value="The Ritual">The Ritual</option>
+            </select>
 
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" required>
-
-        <label for="notes">Additional Notes:</label>
-        <textarea id="notes" name="notes"></textarea>
-
-        <button type="submit">Submit Order</button>
-    </form>
-</section>
-
-
-<script src="https://www.paypal.com/sdk/js?client-id=BAAL6Pq_Lvfk7W5Aw3FXot_yPW3eSIIy4pejTBe20m_PS71RHre7i8Bdl8jO51Dr2paZk5s0GVgg8B4YZI&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-F3ETL42NATP5Y"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "F3ETL42NATP5Y",
-  }).render("#paypal-container-F3ETL42NATP5Y")
-</script>
-
-
-    
-    <!-- Footer Section -->
-    <footer class="footer
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1"
