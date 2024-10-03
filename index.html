@@ -2,7 +2,7 @@
 <section id="tea-menu" class="tea-menu-section">
     <h2>Our Magical Teas</h2>
     
-    <!-- Each order consists of 11 handpicked tea bags filled with spellbound herbs -->
+    <!-- Description for the Tea Section -->
     <p style="text-align: center; font-size: 1.2rem; padding: 20px; color: #F5F5F5;">
         Discover our handcrafted teas, brewed with the finest herbs and a touch of magic. Each blend is designed to uplift your spirits and calm your soul.
     </p>
@@ -37,13 +37,11 @@
                 <span>$11.00</span>
             </li>
             <li>
-                <!-- Placeholder for New Tea Item -->
                 <h4>Serenity</h4>
                 <p>Ashwagandha root, St. Johns wort, Marshmallow leaf, passionflower</p>
                 <span>$11.00</span>
             </li>
             <li>
-                <!-- Placeholder for New Tea Item -->
                 <h4>Breathe</h4>
                 <p>Dandelion leaf, burdock root, gotu kola, marshmallow leaf.</p>
                 <span>$11.00</span>
@@ -72,7 +70,7 @@
 <section id="candied-nuts" class="candied-nuts-section" style="padding: 50px 20px; background-color: #2F4F4F; text-align: center; color: #F5F5F5;">
     <h2 style="font-family: 'UnifrakturMaguntia', cursive; color: #FFD700; padding: 10px; display: inline-block; background-color: rgba(0, 0, 0, 0.5);">Candied Nuts</h2>
     
-    <!-- Our delicious nuts are 10z per order (contains egg) -->
+    <!-- Description for the Nuts Section -->
     <p style="text-align: center; font-size: 1.2rem; padding: 20px; color: #F5F5F5;">
         Our candied nuts are made with love and a sprinkle of sweetness. Perfect for a snack or a gift, they’ll leave you wanting more.
     </p>
@@ -102,53 +100,3 @@
         <img src="candied nuts 2.jpg" alt="Candied Nuts 2" style="width: 80%; border: 3px solid #FFD700; border-radius: 10px;">
     </div>
 </section>
-
-
-
-
- <!-- Order Form Section -->
- <section id="order-form" class="order-form-section">
-    <h2>Place Your Order</h2>
-    <form action="https://formspree.io/f/mdknrglq" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="tea">Select Tea:</label>
-        <select id="tea" name="tea" required>
-            <option value="Berry Rose">Berry Rose</option>
-            <option value="Flower Power">Flower Power</option>
-            <option value="Relax">Relax</option>
-            <option value="Meditation">Meditation</option>
-            <option value="Serenity">Serenity</option>
-            <option value="Calm Storm">Calm Storm</option>
-            <option value="The Elixir">The Elixir</option>
-            <option value="The Ritual">The Ritual</option>
-        </select>
-
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" required>
-
-        <label for="notes">Additional Notes( If ordering more than one tea/nut please specify in notes but update quantity accordingly for accurate billing and no delays in processing!):</label>
-        <textarea id="notes" name="notes"></textarea>
-
-        <button type="submit">Submit Order</button>
-    </form>
-</section>
-
-
-<script src="https://www.paypal.com/sdk/js?client-id=BAAL6Pq_Lvfk7W5Aw3FXot_yPW3eSIIy4pejTBe20m_PS71RHre7i8Bdl8jO51Dr2paZk5s0GVgg8B4YZI&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-F3ETL42NATP5Y"></div>
-<script>
-  paypal.HostedButtons({
-    hostedButtonId: "F3ETL42NATP5Y",
-  }).render("#paypal-container-F3ETL42NATP5Y")
-</script>
-
-
-    
-    <!-- Footer Section -->
-    <footer class="footer
-
