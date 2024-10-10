@@ -291,3 +291,24 @@ button:hover {
     right: 0;
     height: 50px;
 }
+
+
+
+
+
+.bubbling-cauldron-container {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    height: 100vh;            /* Full viewport height to center vertically */
+}
+
+
+
+.bubbling-cauldron {
+    width: 150px;              /* Adjust width if needed */
+    height: 150px;             /* Adjust height if needed */
+    background-image: url('cauldron image 2.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
