@@ -280,7 +280,7 @@ button:hover {
     position: relative;
     width: 150px;
     height: 150px;
-    background-image: url('cauldron image 2.jpg'); /* Replace with your cauldron image */
+    background-image: url('full cauldron.jpg'); /* Replace with your cauldron image */
     background-size: cover;
 }
 
@@ -308,7 +308,7 @@ button:hover {
 .bubbling-cauldron {
     width: 150px;              /* Adjust width if needed */
     height: 150px;             /* Adjust height if needed */
-    background-image: url('cauldron image 2.jpg'); 
+    background-image: url('full cauldron.jpg'); 
     background-size: cover;
     background-position: center;
 }
